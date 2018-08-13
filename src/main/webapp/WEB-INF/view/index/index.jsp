@@ -5,7 +5,7 @@
 <div>
     <div>
         <h1>Spring Boot JSP Example - Starter Project</h1>
-        <h2>Hello ${message}</h2>
+        <h2>${message}</h2>
     </div>
 </div>
 </body>
