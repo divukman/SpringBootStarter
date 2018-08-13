@@ -1,4 +1,4 @@
-package com.dat.starter.service;
+package com.dat.starter.config;
 
 import com.dat.starter.domain.User;
 import org.springframework.security.core.GrantedAuthority;
@@ -8,7 +8,7 @@ import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 
-public class UserAdapter implements UserDetails{
+public class UserAdapter implements UserDetails {
 
     private User user;
 

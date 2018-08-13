@@ -1,4 +1,4 @@
-package com.dat.starter.service;
+package com.dat.starter.config;
 
 import com.dat.starter.domain.User;
 import com.dat.starter.repository.UserRepository;
