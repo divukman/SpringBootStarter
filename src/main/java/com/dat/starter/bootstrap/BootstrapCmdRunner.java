@@ -38,12 +38,12 @@ public class BootstrapCmdRunner implements CommandLineRunner {
         roleRepository.save(roleAdmin);
         roleRepository.save(roleUser);
 
-        User userAdmin = new User("admin", "admin",bCryptPasswordEncoder.encode("password"), true);
+        User userAdmin = new User("admin", "admin", bCryptPasswordEncoder.encode("password"), true);
         userRepository.save(userAdmin);
         userAdmin.addRole(roleAdmin);
         userRepository.save(userAdmin);
 
-        User user = new User("user", "user",bCryptPasswordEncoder.encode("password"), true);
+        User user = new User("user", "user", bCryptPasswordEncoder.encode("password"), true);
         userRepository.save(user);
         user.addRole(roleUser);
         userRepository.save(user);
