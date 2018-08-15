@@ -29,6 +29,7 @@ public class BootstrapCmdRunner implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
+        //@todo: For testing purpose only, eventually move to data.sql
 
         logger.info("Bootstrapping the app...");
 
@@ -47,5 +48,7 @@ public class BootstrapCmdRunner implements CommandLineRunner {
         userRepository.save(user);
         user.addRole(roleUser);
         userRepository.save(user);
+
+        logger.info("Bootstrapping the app... done");
     }
 }
